@@ -11,3 +11,18 @@
     transform: translate(-50%, -50%);
     display: none;
 }
+
+.tool {
+    height: 50px;
+    width: 100px;
+    margin: 5px;
+}
+
+#toolbox {
+    display: flex;
+    align-content: center;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
