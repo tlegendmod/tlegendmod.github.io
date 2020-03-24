@@ -5,11 +5,15 @@
     height: 600px;
     position: absolute;
     background-color: #cecece;
-    align-content: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: none;
+    display: block;
+    z-index: 1;
+    border-width: 1px;
+    border-color: black;
+    overflow: hidden;
+    border-style: solid;
 }
 
 .tool {
@@ -25,4 +29,12 @@
     top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#Pricing-Container {
+    height: 100%;
+    width: 100%;
+    display: block;
+    border: 0;
+    z-index: 2;
 }
