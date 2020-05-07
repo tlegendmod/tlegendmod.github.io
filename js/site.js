@@ -13,10 +13,10 @@ function MoveOnClick () {
 //--CreateExistingIdea
 
 //create div and give it an idea and classname for style later
-let basebtnbg = document.createElement("div");
-basebtnbg.id = 'idea';
+let div = document.createElement("div");
+div.id = 'idea';
 //add the div to the website
-document.body.appendChild(basebtnbg);
+document.body.append(div);
 
 //create button that will have an onclick later
 let basebtn = document.createElement("button");
