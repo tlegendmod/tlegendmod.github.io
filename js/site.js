@@ -32,7 +32,7 @@ function CreateIdeaSpace() {
         var SpaceArea = document.createElement("div");
         SpaceArea.id = "spacearea";
         SpaceArea.className = "ideaspacearea";
-        insertAfter(SpaceArea,document.body);
+        document.body.insertAdjacentHTML('afterbegin', SpaceArea);
     }
 }
 
@@ -43,10 +43,6 @@ function CreateIdeaSpace() {
 
 // --HELPER FUNCTIONS--
 
-//--InsertAfter for elements
-function insertAfter(newNode, existingNode) {
-    existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
-}
 //--Draggable Element Functions
 function dragElement(elmnt) {
 var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
