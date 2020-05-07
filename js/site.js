@@ -10,19 +10,13 @@ function CreateNewIdea () {
     btn.id = "buttonid";
     btn.className = "ideabutton"
     btn.innerHTML = "Click";
-    btn.onclick = MoveOnClick();
+    btn.onclick = MoveOnClick(btn.id);
     document.getElementById(idea.id).appendChild(btn);
 }
 
-function MoveOnClick () {
+function MoveOnClick (btnid) {
     // when click and hold is active
-    let ideas = document.getElementsByClassName("idea").getElementById(idea.id);
-    ideas.onmousedown = function(event) {
-        //fires when mouse down on button
-        console.log("clicking and holding on div");
-    }
-
-
+    btnid.onmousedown = console.log("clicked");
     // move the div element freely to the edges of the viewport
     // release clickhold to set new position of div element
 }
