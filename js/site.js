@@ -14,16 +14,14 @@ function MoveOnClick () {
 
 //create div and give it an idea and classname for style later
 let basebtnbg = document.createElement("div");
-basebtnbg.id = "idea";
-basebtnbg.className = "idea";
+basebtnbg.id = 'idea';
+//add the div to the website
+document.body.appendChild(basebtnbg);
 
 //create button that will have an onclick later
 let basebtn = document.createElement("button");
 basebtn.id = "Idea1";
 basebtn.innerHTML = "Test Me";
-
-//add the div to the website
-document.body.appendChild(basebtnbg);
 
 //add the button to the existing div
 document.getElementById(basebtnbg.id).appendChild(basebtn);
