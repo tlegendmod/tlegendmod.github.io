@@ -1,15 +1,7 @@
 
 
 .idea {
-    border-radius: 4px;
-    box-sizing: border-box;
-    color: rgb(var(--tile-title-color));
-    cursor: pointer;
-    height: var(--md-tile-size);
-    margin-bottom: var(--md-tile-margin);
-    opacity: 1;
-    padding-top: var(--md-tile-padding-top);
-    position: relative;
-    transition-property: background, background-color, border-color, box-shadow, opacity, filter;
-    width: var(--md-tile-size);
+    height: 50px;
+    width: 50px;
+    display: flex;
 }

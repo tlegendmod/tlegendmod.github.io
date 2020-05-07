@@ -1,9 +1,12 @@
 
 function CreateNewIdea () {
-    let basebtnbg = document.createElement("div");
-    basebtnbg.id = "xxxx";
-    basebtnbg.className = "idea";
+    let idea = document.createElement("div");
+    idea.id = "idea" + Date();
+    idea.className = "idea";
     document.body.appendChild(basebtnbg);
+    let btn = document.createElement("button");
+    btn.id = "btnid";
+    document.getElementById(idea.id).appendChild(btn);
 }
 
 function MoveOnClick () {
