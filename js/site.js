@@ -15,7 +15,10 @@ function MoveOnClick () {
 }
 
 // CreateExistingIdea
+let basebtnbg = document.createElement("div");
+basebtnbg.id = "ideabg";
+basebtnbg.className = "idea";
 let basebtn = document.createElement("button");
 basebtn.id = "Idea1";
 basebtn.innerHTML = "Test Me";
-document.body.appendChild(basebtn);
+document.getElementById("ideabg").appendChild(basebtn);

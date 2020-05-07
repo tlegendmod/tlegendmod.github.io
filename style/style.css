@@ -1,43 +1,15 @@
 
 
-.tcontainer {
-    width: 600px;
-    height: 600px;
-    position: absolute;
-    background-color: #cecece;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    border-width: 1px;
-    border-color: black;
-    overflow: hidden;
-    border-style: solid;
-}
-
-.tool {
-    height: 50px;
-    width: 100px;
-    margin: 5px;
-}
-
-#toolbox {
-    display: flex;
-    align-content: center;
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#Pricing-Container {
-    height: 100%;
-    width: 100%;
-    display: block;
-    border: 0;
-    z-index: 2;
-}
-
-#Hotel-Pricing {
-    display: block;
+.idea {
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: rgb(var(--tile-title-color));
+    cursor: pointer;
+    height: var(--md-tile-size);
+    margin-bottom: var(--md-tile-margin);
+    opacity: 1;
+    padding-top: var(--md-tile-padding-top);
+    position: relative;
+    transition-property: background, background-color, border-color, box-shadow, opacity, filter;
+    width: var(--md-tile-size);
 }
