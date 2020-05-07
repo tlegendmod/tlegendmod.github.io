@@ -1,22 +1,26 @@
 
+CreateNewIdea();
 
 
 function CreateNewIdea () {
+    //Create Div to start
     var idea = document.createElement("div");
     idea.id = "idea";
     idea.className = "ideaoutline";
+    //Add Div to body
     document.body.appendChild(idea);
+    //Make Div draggable
     dragElement(idea);
 
+    //Create Button
     var btn = document.createElement("button");
     btn.id = "buttonid";
     btn.className = "ideabutton"
     btn.innerHTML = "Click";
+    //Add this button onto the div created before
     document.getElementById(idea.id).appendChild(btn);
 
 }
-
-CreateNewIdea();
 
 // Make the DIV element draggable:
 // Example below
@@ -24,6 +28,8 @@ CreateNewIdea();
 
 
 // --HELPER FUNCTIONS--
+
+
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
   if (document.getElementById(elmnt.id)) {
