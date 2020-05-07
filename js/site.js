@@ -12,23 +12,18 @@ function CreateNewIdea () {
     btn.id = "buttonid";
     btn.className = "ideabutton"
     btn.innerHTML = "Click";
-    btn.setAttribute = "onclick", MoveOnClick();
     document.getElementById(idea.id).appendChild(btn);
 
-}
-
-function MoveOnClick () {
-    // when click and hold is active
-    
-    // move the div element freely to the edges of the viewport
-    // release clickhold to set new position of div element
 }
 
 CreateNewIdea();
 
 // Make the DIV element draggable:
-//dragElement(document.getElementById("mydiv"));
+// Example below
+// dragElement(document.getElementById("mydiv"));
 
+
+// --HELPER FUNCTIONS--
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
   if (document.getElementById(elmnt.id)) {
