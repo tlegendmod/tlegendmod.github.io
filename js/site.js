@@ -5,7 +5,7 @@ function CreateNewIdea () {
     var idea = document.createElement("div");
     idea.id = "idea" + Date();
     idea.className = "idea";
-    document.body.appendChild(basebtnbg);
+    document.body.appendChild(idea);
     var btn = document.createElement("button");
     btn.id = "btnid";
     document.getElementById(idea.id).appendChild(btn);
