@@ -10,12 +10,15 @@ function CreateNewIdea () {
     btn.id = "buttonid";
     btn.className = "ideabutton"
     btn.innerHTML = "Click";
+    btn.onclick = "MoveOnClick()";
     document.getElementById(idea.id).appendChild(btn);
-
 }
 
 function MoveOnClick () {
-
+    // when click and hold is active
+    
+    // move the div element freely to the edges of the viewport
+    // release clickhold to set new position of div element
 }
 
 CreateNewIdea();
