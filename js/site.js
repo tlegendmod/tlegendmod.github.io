@@ -24,9 +24,9 @@ function CreateNewIdea () {
 }
 
 function CreateIdeaSpace() {
-    if (SpaceArea.id) {
+    if (SpaceArea) {
         SpaceArea.id = document.body.getElementById(SpaceArea.id);
-        SpaceArea.style.className.setAttribute("visibility","hidden");
+        SpaceArea.style.setAttribute("visibility","hidden");
     }
     else {
         var SpaceArea = document.createElement("div");
