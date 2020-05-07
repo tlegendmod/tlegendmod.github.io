@@ -18,6 +18,6 @@ document.body.appendChild(basebtnbg);
 let basebtn = document.createElement("button");
 basebtn.id = "Idea1";
 basebtn.innerHTML = "Test Me";
-document.getElementById("ideabg").appendChild(basebtn);
+document.getElementById("idea").appendChild(basebtn);
 
 
