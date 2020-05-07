@@ -24,10 +24,16 @@ function CreateNewIdea () {
 }
 
 function CreateIdeaSpace() {
-    var SpaceArea = document.createElement("div");
-    SpaceArea.id = "spacearea";
-    SpaceArea.className = "ideaspacearea";
-    insertAfter(SpaceArea,document.body);
+    if (SpaceArea.id) {
+        SpaceArea.id = document.body.getElementById(SpaceArea.id);
+        SpaceArea.style.className.setAttribute("visibility","hidden");
+    }
+    else {
+        var SpaceArea = document.createElement("div");
+        SpaceArea.id = "spacearea";
+        SpaceArea.className = "ideaspacearea";
+        insertAfter(SpaceArea,document.body);
+    }
 }
 
 // Make the DIV element draggable:
