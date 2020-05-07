@@ -16,7 +16,12 @@ function MoveOnClick () {
 let div = document.createElement("div");
 div.id = 'idea';
 //add the div to the website
-document.body.appendChild(div);
+if(document.body != null) {
+    document.body.appendChild(div);
+}
+else {
+    console.log("DIV NOT APPENDED TO BODY");
+};
 
 //create button that will have an onclick later
 let basebtn = document.createElement("button");
