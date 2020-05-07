@@ -32,7 +32,7 @@ function CreateIdeaSpace() {
         var SpaceArea = document.createElement("div");
         SpaceArea.id = "spacearea";
         SpaceArea.className = "ideaspacearea";
-        document.body.insertAdjacentHTML('afterbegin', SpaceArea);
+        document.body.insertAdjacentHTML('afterbegin', '<div id=" + SpaceArea.id + """ + " " + "class="" + SpaceArea.className + """ + "></div>"');
     }
 }
 
