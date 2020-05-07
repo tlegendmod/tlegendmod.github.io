@@ -32,7 +32,7 @@ basebtn.id = "Idea1";
 basebtn.innerHTML = "Test Me";
 
 //add the button to the existing div
-document.getElementById(basebtnbg.id).appendChild(basebtn);
+document.getElementById(div.id).appendChild(basebtn);
 
 
 
