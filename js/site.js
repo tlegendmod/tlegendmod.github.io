@@ -10,11 +10,11 @@ function CreateNewIdea () {
     btn.id = "buttonid";
     btn.className = "ideabutton"
     btn.innerHTML = "Click";
-    btn.onclick = MoveOnClick(btn.id);
+    btn.setAttribute = "onclick", MoveOnClick();
     document.getElementById(idea.id).appendChild(btn);
 }
 
-function MoveOnClick (btnid) {
+function MoveOnClick () {
     // when click and hold is active
     btnid.onmousedown = console.log("clicked");
     // move the div element freely to the edges of the viewport
