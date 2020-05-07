@@ -1,16 +1,21 @@
 
-
-.ideaoutline {
+.idea {
     height: 100px;
     width: 100px;
     display: flex;
     position: absolute;
     top: 50%;
     left: 50%;
+    border-radius: 50%;
+}
+
+.ideaspacearea {
+    background-color: #00000085;
+    height: 100vh;
+    border-radius: 5%;
 }
 
 .ideabutton {
     height: 100%;
     width: 100%;
-    border-radius: 50%;
 }

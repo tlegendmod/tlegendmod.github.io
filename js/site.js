@@ -6,7 +6,7 @@ function CreateNewIdea () {
     //Create Div to start
     var idea = document.createElement("div");
     idea.id = "idea";
-    idea.className = "ideaoutline";
+    idea.className = "idea";
     //Add Div to body
     document.body.appendChild(idea);
     //Make Div draggable
@@ -17,9 +17,16 @@ function CreateNewIdea () {
     btn.id = "buttonid";
     btn.className = "ideabutton"
     btn.innerHTML = "Click";
+    btn.setAttribute("onclick","CreateIdeaSpace()");
     //Add this button onto the div created before
     document.getElementById(idea.id).appendChild(btn);
 
+}
+
+function CreateIdeaSpace() {
+    var SpaceArea = document.createElement("div");
+    SpaceArea.id = "spacearea";
+    SpaceArea.className = "ideaspacearea";
 }
 
 // Make the DIV element draggable:
@@ -29,18 +36,20 @@ function CreateNewIdea () {
 
 // --HELPER FUNCTIONS--
 
+//--
 
+//--Draggable Element Functions
 function dragElement(elmnt) {
-  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-  if (document.getElementById(elmnt.id)) {
+var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+if (document.getElementById(elmnt.id)) {
     // if present, the header is where you move the DIV from:
     document.getElementById(elmnt.id).onmousedown = dragMouseDown;
-  } else {
+} else {
     // otherwise, move the DIV from anywhere inside the DIV:
     elmnt.onmousedown = dragMouseDown;
-  }
+}
 
-  function dragMouseDown(e) {
+function dragMouseDown(e) {
     e = e || window.event;
     e.preventDefault();
     // get the mouse cursor position at startup:
@@ -49,9 +58,9 @@ function dragElement(elmnt) {
     document.onmouseup = closeDragElement;
     // call a function whenever the cursor moves:
     document.onmousemove = elementDrag;
-  }
+}
 
-  function elementDrag(e) {
+function elementDrag(e) {
     e = e || window.event;
     e.preventDefault();
     // calculate the new cursor position:
@@ -62,11 +71,11 @@ function dragElement(elmnt) {
     // set the element's new position:
     elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
     elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-  }
+}
 
-  function closeDragElement() {
+function closeDragElement() {
     // stop moving when mouse button is released:
     document.onmouseup = null;
     document.onmousemove = null;
-  }
+}
 }
