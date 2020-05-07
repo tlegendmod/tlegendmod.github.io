@@ -16,7 +16,7 @@ function MoveOnClick () {
 //--CreateExistingIdea
 
 //create div and give it an idea and classname for style later
-let div = document.createElement("div");
+var div = document.createElement("div");
 div.id = 'idea';
 //add the div to the website
 if(document.body != null) {
@@ -27,7 +27,7 @@ else {
 };
 
 //create button that will have an onclick later
-let basebtn = document.createElement("button");
+var basebtn = document.createElement("button");
 basebtn.id = "Idea1";
 basebtn.innerHTML = "Test Me";
 
