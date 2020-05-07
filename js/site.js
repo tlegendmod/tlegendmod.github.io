@@ -27,7 +27,7 @@ function CreateIdeaSpace() {
     var SpaceArea = document.createElement("div");
     SpaceArea.id = "spacearea";
     SpaceArea.className = "ideaspacearea";
-    document.body.insertBefore(document.body.children,SpaceArea);
+    document.body.insertBefore(document.body.firstChild,SpaceArea);
 }
 
 // Make the DIV element draggable:
