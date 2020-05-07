@@ -8,6 +8,7 @@ function CreateNewIdea () {
     document.body.appendChild(idea);
     var btn = document.createElement("button");
     btn.id = "buttonid";
+    btn.innerHTML = "Click";
     document.getElementById(idea.id).appendChild(btn);
 
 
