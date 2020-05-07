@@ -2,11 +2,11 @@
 
 
 function CreateNewIdea () {
-    let idea = document.createElement("div");
+    var idea = document.createElement("div");
     idea.id = "idea" + Date();
     idea.className = "idea";
     document.body.appendChild(basebtnbg);
-    let btn = document.createElement("button");
+    var btn = document.createElement("button");
     btn.id = "btnid";
     document.getElementById(idea.id).appendChild(btn);
 
